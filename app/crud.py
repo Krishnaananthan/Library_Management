@@ -4,6 +4,7 @@ from app.models import User, Book
 
 
 def create_user(db:Session,username:str,role:str):
+    
     user=User(username=username,role=role)
     db.add(user)
     db.commit()
