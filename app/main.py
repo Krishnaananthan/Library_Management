@@ -12,3 +12,9 @@ app = FastAPI(title="Library Management - Role Based")
 
 
 app.include_router(users.router)
+
+
+
+@app.get("/")
+def get():
+    return {"Message":"Library Manangement"}

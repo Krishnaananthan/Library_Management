@@ -14,3 +14,4 @@ class BookResponse(BaseModel):
     title: str
     author: str
     available: bool
+    count:int

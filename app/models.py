@@ -18,3 +18,4 @@ class Book(Base):
     author=Column(String)
     available=Column(Boolean,default=True)
     owner_id = Column(Integer, ForeignKey("users.id"), nullable=True)
+    count=Column(Integer,default=0)
